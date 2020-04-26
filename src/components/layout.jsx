@@ -1,5 +1,7 @@
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
+import Header from '../components/header.jsx'
+import Footer from '../components/footer.jsx'
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -26,9 +28,11 @@ const Main = styled.div`
 const Layout = ({ children, ...props }) => (
   <Root>
     <GlobalStyle />
+    <Header />
     <Main>
       {children}
     </Main>
+    <Footer />
   </Root>
 );
 
