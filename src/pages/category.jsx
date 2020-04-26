@@ -36,7 +36,7 @@ const CategoryPage = () => (
       />
       <Heading>ДСП шлифованное</Heading>
       <ProductList>
-        {Array.from(Array(16), () => (
+        {Array.from(Array(21), () => (
           <ProductListItem>
             <ProductCard />
           </ProductListItem>
