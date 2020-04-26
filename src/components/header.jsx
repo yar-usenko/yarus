@@ -17,6 +17,7 @@ const Header = () => (
     <Container>
       <Category to="/">Главная</Category>
       <Category to="/category">Каталог</Category>
+      <Category to="/article">Статья</Category>
     </Container>
   </Root>
 )
