@@ -1,17 +1,7 @@
 import React from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 import Header from '../components/header.jsx'
 import Footer from '../components/footer.jsx'
-
-const GlobalStyle = createGlobalStyle`
-  * {
-    box-sizing: border-box;
-  }
-
-  body {
-    margin: 0;
-  }
-`;
 
 const Root = styled.div`
   display: flex;
@@ -27,7 +17,6 @@ const Main = styled.div`
 
 const Layout = ({ children, ...props }) => (
   <Root>
-    <GlobalStyle />
     <Header />
     <Main>
       {children}

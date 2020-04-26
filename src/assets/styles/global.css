@@ -1,6 +1,8 @@
 :root {
   font-family: system-ui, sans-serif;
   box-sizing: border-box;
+  font-size: 100%;
+  line-height: 1.5;
   overflow-y: scroll;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;

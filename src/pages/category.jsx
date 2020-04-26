@@ -2,10 +2,12 @@ import React from "react"
 import styled from 'styled-components'
 import Layout from "../components/layout"
 import Container from '../components/container'
+import ProductCard from '../components/product-card.jsx'
 
 const ProductList = styled.ul`
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-gap: 1.5rem 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -13,20 +15,17 @@ const ProductList = styled.ul`
 
 const ProductListItem = styled.li`
   display: block;
-  flex: 1 0 12rem;
-  min-width: 8rem;
-  max-width: 12rem;
 `
 
 const NotFoundPage = () => (
   <Layout>
     <Container>
-      <div>Категория > Категория</div>
+      <div>Каталог > Стройматериалы > Дерево</div>
       <h1>Категория</h1>
       <ProductList>
         {Array.from(Array(16), () => (
           <ProductListItem>
-            product
+            <ProductCard />
           </ProductListItem>
         ))}
       </ProductList>
