@@ -7,11 +7,16 @@ const Root = styled.header`
   display: block;
 `
 
+const Category = styled(Link)`
+  display: inline-block;
+  margin-right: .5rem;
+`
+
 const Header = () => (
   <Root>
     <Container>
-      <Link to="/">Главная</Link>
-      <Link to="/category">Категория</Link>
+      <Category to="/">Главная</Category>
+      <Category to="/category">Каталог</Category>
     </Container>
   </Root>
 )

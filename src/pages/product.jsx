@@ -2,24 +2,10 @@ import React from "react"
 import styled from 'styled-components'
 import Layout from "../components/layout"
 import Container from '../components/container'
-import ProductCard from '../components/product-card.jsx'
 import Breadcrumbs from '../components/breadcrumbs.jsx'
 import Heading from '../components/heading.jsx'
 
-const ProductList = styled.ul`
-  display: grid;
-  grid-gap: 1.5rem 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-`
-
-const ProductListItem = styled.li`
-  display: block;
-`
-
-const CategoryPage = () => (
+const ProductPage = () => (
   <Layout>
     <Container>
       <Breadcrumbs
@@ -34,16 +20,9 @@ const CategoryPage = () => (
           content: 'Дерево'
         }]}
       />
-      <Heading>ДСП шлифованное</Heading>
-      <ProductList>
-        {Array.from(Array(16), () => (
-          <ProductListItem>
-            <ProductCard />
-          </ProductListItem>
-        ))}
-      </ProductList>
+      <Heading>ДСП шлифованное SwissPan 2440x1830x16 СВ</Heading>
     </Container>
   </Layout>
 )
 
-export default CategoryPage
+export default ProductPage;
